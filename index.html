@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OOP tutorials</title>
+  <script src="js/algorithm.js"></script>
+  <script>
+		var breathingEvents = {
+			fireOffEvent : function(){
+				document.getElementById('display-parameters').innerHTML = "off event fired";
+			},
+			
+			fireOnEvent : function(){
+				document.getElementById('display-parameters').innerHTML = "on event fired";
+				
+			},
+						
+			offRunning : function(){
+				document.getElementById('display-running').innerHTML = "off event runing";
+				
+			},
+			
+			onRunning : function(){
+				document.getElementById('display-running').innerHTML = "on event runing";
+			}
+			
+		}
+	
+	  function clicked(){
+		    breathingAlgorithm.run({'runjQuery' : true});
+			//breathingAlgorithm.run();
+		}
+  </script>
+</head>
+
+<body>
+	<div style="width:400px; margin:50px auto;">
+		<input type="button" style="padding:20px 50px; font-size:20px; cursor:pointer"id="buttonId" onClick="clicked()" value="Start breathing algorithm !!!">
+		<div id="display-parameters" style="margin-top:50px; font-size:25px; color:#ffffff;background:#000;padding:20px; width:300px;text-align:center;"></div>
+		<div id="display-running" style="margin-top:50px; font-size:25px; color:#ffffff;background:#000;padding:20px; width:300px;text-align:center;"></div>
+	</div>
+	
+</body>
+
+</html>
